@@ -30,7 +30,7 @@
     </head>
     <body>
 
-        <form action = "advanced.php" method = "post">
+        <form action = "additional.php" method = "post">
             <input type="text" name="number">
             <input type = "submit" value = "Открыть новость">
         </form>
