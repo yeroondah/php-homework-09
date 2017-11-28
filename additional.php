@@ -1,10 +1,12 @@
 <?php
-    class News {
+    class News
+    {
         private $firstNews = 'Первая новость';
         private $secondNews = 'Вторая новость';
         private $thirdNews ='Третья новость';
 
-        public function showNews($newsNumber) {
+        public function showNews($newsNumber)
+        {
             switch($newsNumber) {
                 case $newsNumber == 1:
                     return $this -> firstNews;
@@ -16,7 +18,7 @@
                     return $noNews = 'Простите, такого номера нет. Введите номер статьи или новости.';
             }
         }
-    };
+    }
 
     $newsClass = new News();
 ?>
