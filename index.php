@@ -2,14 +2,17 @@
 
 // Первый класс
 
-class Friend {
+class Friend 
+{
     private $name;
 
-    public function __construct($name) {
+    public function __construct($name)
+    {
         $this -> name = $name;
     }
 
-    public function friendsName() {
+    public function friendsName()
+    {
        return $friend = $this -> name;
     }
 }
@@ -21,20 +24,23 @@ $friendMel = new Friend('Мэл');
 
 // Второй класс
 
-class VideoPlayers {
+class VideoPlayers
+{
     private $labelOne;
     private $labelTwo;
     private $priceOne;
     private $priceTwo; 
 
-    public function __construct($labelOne, $labelTwo, $priceOne, $priceTwo) {
+    public function __construct($labelOne, $labelTwo, $priceOne, $priceTwo)
+    {
         $this -> labelOne = $labelOne;
         $this -> labelTwo = $labelTwo;
         $this -> priceOne = $priceOne;
         $this -> priceTwo = $priceTwo;
     }
 
-    public function whichPriceLower() {
+    public function whichPriceLower()
+    {
         if($this -> priceOne < $this -> priceTwo) {
             return $this -> labelOne;
         } elseif($this -> priceOne > $this -> priceTwo) {
@@ -55,11 +61,13 @@ $playersThree = new VideoPlayers('Samsung', 'LG', '18000', '18000');
 
 // третий класс
 
-class TextEditor {
+class TextEditor
+{
     private $name = 'word';
     private $format;
 
-    public function setFormat($format) {
+    public function setFormat($format)
+    {
         $this -> format = $format;
     }
 }
@@ -71,15 +79,18 @@ $formatJson = new TextEditor('json');
 
 // четвёртый класс
 
-class GraphicEditor {
+class GraphicEditor
+{
     private $name = 'Coral Draw';
     private static $format = 'cdr';
 
-    public function staticFormat() {
+    public function staticFormat()
+    {
         return self::$format;
     }
 
-    public function staticName() {
+    public function staticName()
+    {
         return self::$name;
     }
 }
@@ -91,11 +102,13 @@ $editorTwo = new GraphicEditor();
 
 // пятый класс
 
-class FixedDiscount {
+class FixedDiscount
+{
     private static $discountTen = 10;
     private static $discountFive = 5;
 
-    public function calcDiscount($price) {
+    public function calcDiscount($price)
+    {
         if($price < 5000) {
             return $finalPrice = $price - $price*self::$discountFive/100;
         } else {
